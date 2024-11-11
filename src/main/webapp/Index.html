@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+	<!-- Home Section -->
+	<section id="home">
+		<h1>Welcome to My Portfolio</h1>
+		<p>Hi, I'm Saikrishna, a Full Stack Developer.</p>
+		<img src="sai.jpg" alt="My Image">
+	</section>
+
+	<!-- About Me Section -->
+	<section id="about">
+		<h2>About Me</h2>
+		<p>Background: ...</p>
+		<p>Skills: Java, HTML, CSS, JavaScript, SQL...</p>
+	</section>
+
+	<!-- Projects Section -->
+	<section id="projects">
+		<h2>Projects</h2>
+		<div class="project">
+			<img src="project1.jpg" alt="Project 1">
+			<p>Description: ...</p>
+			<a href="https://github.com/your-profile/project1">View on GitHub</a>
+		</div>
+		<!-- Add more projects as needed -->
+	</section>
+
+	<!-- Resume Section -->
+	<section id="resume">
+		<h2>Resume</h2>
+		<a href="resume.pdf" download>Download Resume</a>
+	</section>
+
+	<!-- Contact Form Section -->
+	<section id="contact">
+		<h2>Contact Me</h2>
+		<form action="ContactServlet" method="post">
+			<input type="text" name="name" placeholder="Your Name" required>
+			<input type="email" name="email" placeholder="Your Email" required>
+			<textarea name="message" placeholder="Your Message" required></textarea>
+			<button type="submit">Send</button>
+		</form>
+	</section>
+</body>
+</html>

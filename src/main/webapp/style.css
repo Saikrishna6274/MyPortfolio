@@ -1,0 +1,78 @@
+/* General Styling */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+
+section {
+	padding: 20px;
+	text-align: center;
+}
+
+#home img {
+	width: 150px;
+	border-radius: 50%;
+}
+
+/* Project Gallery */
+#projects .project {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	width: 200px;
+	border: 1px solid #ccc;
+}
+
+/* Contact Form Styling */
+form input, form textarea, form button {
+	display: block;
+	width: 100%;
+	margin: 10px 0;
+}
+
+/* Responsive Layout for Tablets and Smaller Devices */
+@media ( max-width : 1024px) {
+	#home img {
+		width: 120px;
+	}
+	#projects .project {
+		width: 150px; /* Adjust project width for smaller screens */
+	}
+	section {
+		padding: 15px;
+	}
+}
+
+/* Responsive Layout for Mobile Devices */
+@media ( max-width : 768px) {
+	#home img {
+		width: 100px;
+	}
+	#projects {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#projects .project {
+		width: 80%; /* Full width on mobile */
+		margin: 5px 0;
+	}
+	form input, form textarea, form button {
+		width: 90%; /* Reduce form field width slightly on mobile */
+	}
+}
+
+/* Smaller Screens (e.g., phones in portrait mode) */
+@media ( max-width : 480px) {
+	h1 {
+		font-size: 1.5em;
+	}
+	#projects .project {
+		width: 90%; /* Further adjust project width */
+	}
+	section {
+		padding: 10px;
+	}
+}
